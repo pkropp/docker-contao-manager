@@ -1,0 +1,24 @@
+# this is our development docker-compose building on top of the production docker-compose, just mounting
+# the sync image - not redefining anything else
+
+version: "2"
+#version: "3"
+
+services:
+#  web: # oder php eventuell
+#    volumes:
+#      - appcode-native-osx-sync-contao-manager-nginx:/var/www/html:nocopy # nocopy is important
+
+  php: # oder php eventuell
+    volumes:
+      - appcode-native-osx-sync-contao-manager-nginx:/var/www/html:nocopy # nocopy is important
+#  db: # oder php eventuell
+#    volumes:
+#    - appcode-native-osx-sync-contao-manager-mysql:/var/lib/mysql:nocopy # nocopy is important
+
+# that the important thing
+volumes:
+  appcode-native-osx-sync-contao-manager-nginx:
+    external: true
+#  appcode-native-osx-sync-contao-manager-mysql:
+#    external: true

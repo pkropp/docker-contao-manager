@@ -1,0 +1,14 @@
+# Global
+.*.swp
+.DS_Store
+
+app
+
+# PHPStorm
+.idea/*
+
+# Netbeans
+nbproject/
+/nbproject/
+/nbproject/private/
+/nbproject/private/private.properties

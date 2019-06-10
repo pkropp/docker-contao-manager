@@ -1,0 +1,17 @@
+version: "2"
+
+options:
+  verbose: true
+syncs:
+  appcode-native-osx-sync-contao-manager-nginx: # tip: add -sync and you keep consistent names as a convention
+    src: './app'
+    # sync_strategy: 'native_osx' # not needed, this is the default now
+    #sync_excludes: ['ignored_folder', '.ignored_dot_folder']
+    sync_excludes: []
+    sync_userid: '33'
+#  appcode-native-osx-sync-contao-manager-mysql: # tip: add -sync and you keep consistent names as a convention
+#    src: './data/db/mysql'
+#    # sync_strategy: 'native_osx' # not needed, this is the default now
+#    #sync_excludes: ['ignored_folder', '.ignored_dot_folder']
+#    sync_excludes: []
+#    sync_userid: '33'
